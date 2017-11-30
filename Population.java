@@ -3,9 +3,9 @@
 	Created: 11/30/17
 	Updated: 11/30/17
 	v2.0.0
-	Index
+	Population
 */
 import java.util.*;
-public class Index {
+public class Population extends ArrayList {
 
 }
