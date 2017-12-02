@@ -8,6 +8,7 @@
 import java.awt.Color;
 import java.util.*;
 public class Board extends JFrame {
+	/* PROPERTIES */
 	protected int x = 640;
 	protected int y = 480;
 
@@ -15,6 +16,9 @@ public class Board extends JFrame {
 	protected int celly = 1;
 
 	protected Color bg = Color.black;
+
+
+	/* CONSTRUCTORS */
 	Board() {
 		System.out.println("board is using defaults");
 	}
@@ -29,12 +33,18 @@ public class Board extends JFrame {
 
 		System.out.println("board is using overloaded constructor 1");
 	}
+
+
+	/* GETTERS */
 	public int getX() {
 		return x;
 	}
 	public int getY() {
 		return y;
 	}
+
+
+	/* SETTERS */
 	public void setX(int n) {
 		x = n;
 	}
@@ -54,6 +64,10 @@ public class Board extends JFrame {
 		bg = c;
 	}
 
+	/* RENDERING FUNCTIONS */
+	public Dimension getPreferredSize() {
+    return new Dimension(canvas.getWidth(), canvas.getHeight());
+  }
 
 	public void paintComponent() {
 

@@ -7,5 +7,5 @@
 */
 import java.util.*;
 public class Index {
-
+	// TODO: opengl to create 3d rendered version of simulation (x,y,z vectors)
 }
